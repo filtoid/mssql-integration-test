@@ -7,7 +7,7 @@ This is designed to be a drop in replacement for the [MySql PyPi Project](https:
 
 ### Installation
 As of now it is not installed in PyPi so you have install from Github:
-`pip install git+https://github.com/filtoid/mssql-integration-tests`
+`pip install git+https://github.com/filtoid/mssql-integration-test`
 
 ### Usage
 ```python
