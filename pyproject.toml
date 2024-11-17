@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mssql_integration_test"
+dynamic = ["version", "readme"]
+authors = [{name = "Phil Jeffes", email = "hello@electrocatstudios.com"}]
+license = {text = "GPL"}
+description = "Simplified MS Sql connection"
+version="0.1.0"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+
+dependencies = [
+    "pyyaml >= 6.0.1",
+    "strip_ansi >= 0.1.1"
+]
+
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+tests = [
+  "pytest >= 7.2.1",
+  "pytest-env >= 0.8.1",
+  "pytest-cov >= 4.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/filtoid/mssql_integration_test"
+
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
