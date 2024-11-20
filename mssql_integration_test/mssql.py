@@ -1,6 +1,6 @@
 import pyodbc
 
-class MsSql(Object):
+class MsSql():
     def __init__(self, host, db_name, driver, username=None, password=None, port=1433):
         if host is None:
             raise ValueError("Host cannot be None")
