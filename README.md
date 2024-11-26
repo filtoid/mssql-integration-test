@@ -11,7 +11,7 @@ As of now it is not installed in PyPi so you have install from Github:
 
 ### Usage
 ```python
-from mssql-integration-tests import MsSql
+from mssql_integration_tests import MsSql
 
 mssql = MsSql(host="<HOSTNAME>", port=<PORT>, db_name="<DATABASE_NAME>", username="<USER>", password="<PASSWORD>", driver="<DRIVER>")
 
