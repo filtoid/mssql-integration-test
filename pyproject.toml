@@ -39,3 +39,4 @@ Homepage = "https://github.com/filtoid/mssql_integration_test"
 
 [tool.setuptools.dynamic]
 readme = {file = ["README.md"], content-type = "text/markdown"}
+version = {attr = "mssql_integration_test.version.__version__"}
